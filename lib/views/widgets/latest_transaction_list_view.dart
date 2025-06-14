@@ -8,18 +8,18 @@ class LatestTransactionListView extends StatelessWidget {
   static const items = [
     UserInfoModel(
       image: Assets.imagesAvatar1,
-      title: 'Madrani Andi',
-      subtitle: 'Madraniadi20@gmail',
+      title: 'Abdulrazzaq AlFeel',
+      subtitle: 'alfee38@gmail',
     ),
     UserInfoModel(
       image: Assets.imagesAvatar2,
-      title: 'Madrani Andi',
-      subtitle: 'Madraniadi20@gmail',
+      title: 'Ali AlFeel',
+      subtitle: 'ali@gmail',
     ),
     UserInfoModel(
       image: Assets.imagesAvatar3,
-      title: 'Madrani Andi',
-      subtitle: 'Madraniadi20@gmail',
+      title: 'Maher AlFeel',
+      subtitle: 'maher@gmail',
     ),
   ];
   @override

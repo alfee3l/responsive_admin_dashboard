@@ -19,8 +19,8 @@ class CustomDrawer extends StatelessWidget {
             child: UserInfoList(
               userInfoModel: UserInfoModel(
                 image: Assets.imagesAvatar3,
-                title: 'Lekan Okeowo',
-                subtitle: 'demo@gmail.com',
+                title: 'Abdulrazzaq alfeel',
+                subtitle: 'alfee38l@gmail.com',
               ),
             ),
           ),

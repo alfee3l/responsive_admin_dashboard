@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_admin_dashboard/views/widgets/all_expenses.dart';
+import 'package:responsive_admin_dashboard/views/widgets/all_expenses_and_quick_invoice.dart';
+import 'package:responsive_admin_dashboard/views/widgets/card_page_view.dart';
+import 'package:responsive_admin_dashboard/views/widgets/custom_dot.dart';
 import 'package:responsive_admin_dashboard/views/widgets/custom_drawer.dart';
+import 'package:responsive_admin_dashboard/views/widgets/dots_indicator.dart';
+import 'package:responsive_admin_dashboard/views/widgets/my_card.dart';
+import 'package:responsive_admin_dashboard/views/widgets/my_card_section.dart';
 import 'package:responsive_admin_dashboard/views/widgets/quick_invoice.dart';
+import 'package:responsive_admin_dashboard/views/widgets/transaction_history.dart';
 
 class DashBoradDesktopLayoutView extends StatelessWidget {
   const DashBoradDesktopLayoutView({super.key});
@@ -14,14 +21,10 @@ class DashBoradDesktopLayoutView extends StatelessWidget {
         SizedBox(width: 32),
         Expanded(
           flex: 2,
-          child: Column(
-            children: [
-              AllExpenses(),
-              SizedBox(height: 48,),
-              QuickInvoice(),
-            ],
-          ),
-        ), 
+          child: SingleChildScrollView(child: AllExpensesAndQuickInvoice()),
+        ),
+        SizedBox(width: 24,),
+        Expanded(child: TransactionHistory()),
       ],
     );
   }

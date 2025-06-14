@@ -12,7 +12,7 @@ class CustomBackgroundContainer extends StatelessWidget {
         color: Colors.white,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       ),
-      child: child,
+      child: child, 
     );
   }
 }

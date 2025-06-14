@@ -3,7 +3,7 @@ import 'package:responsive_admin_dashboard/views/dashboard_view.dart';
 
 void main() {
   runApp(const ResponsiveDashBoard());
-}
+} 
 
 class ResponsiveDashBoard extends StatelessWidget {
   const ResponsiveDashBoard({super.key});
