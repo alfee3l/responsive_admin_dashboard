@@ -17,7 +17,7 @@ final Color? backgroundColor,textColor;
           backgroundColor:backgroundColor?? const Color(0xFF4DB7F2),
         ),
         onPressed: () {},
-        child: Text('Send Money', style: AppStyles.styleSemiBold18.copyWith(
+        child: Text('Send Money', style: AppStyles.styleSemiBold18(context).copyWith(
           color: textColor,
         )),
       ),

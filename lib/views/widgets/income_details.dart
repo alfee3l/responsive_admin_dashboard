@@ -1,4 +1,6 @@
-  import 'package:flutter/material.dart';
+  import 'dart:developer';
+
+import 'package:flutter/material.dart';
   import 'package:responsive_admin_dashboard/models/item_details_model.dart';
   import 'package:responsive_admin_dashboard/views/widgets/item_details.dart';
 
@@ -28,12 +30,10 @@
     ];
     @override
     Widget build(BuildContext context) {
-      return ListView.builder(
-        shrinkWrap: true,
-        itemCount: items.length,
-        itemBuilder: (context, index) {
-          return ItemDetails(itemDetailsModel: items[index]);
-        },
+      log(MediaQuery.sizeOf(context).width.toString());
+
+      return Column(
+     children: items.map((e)=>ItemDetails(itemDetailsModel: e)).toList(),
       );
     }
   }
