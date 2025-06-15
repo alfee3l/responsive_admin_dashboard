@@ -5,6 +5,7 @@ import 'package:responsive_admin_dashboard/views/widgets/card_page_view.dart';
 import 'package:responsive_admin_dashboard/views/widgets/custom_dot.dart';
 import 'package:responsive_admin_dashboard/views/widgets/custom_drawer.dart';
 import 'package:responsive_admin_dashboard/views/widgets/dots_indicator.dart';
+import 'package:responsive_admin_dashboard/views/widgets/income.dart';
 import 'package:responsive_admin_dashboard/views/widgets/my_card.dart';
 import 'package:responsive_admin_dashboard/views/widgets/my_card_section.dart';
 import 'package:responsive_admin_dashboard/views/widgets/my_crad_and_transaction_history.dart';
@@ -25,7 +26,16 @@ class DashBoradDesktopLayoutView extends StatelessWidget {
           child: SingleChildScrollView(child: AllExpensesAndQuickInvoice()),
         ),  
         SizedBox(width: 24,),
-        Expanded(child: MyCardAndTransactionHistory()),
+        Expanded(  
+          child: Column(
+            children: [
+              SizedBox(height: 40,),
+              MyCardAndTransactionHistory(),
+             SizedBox(height: 24,),
+              Expanded(
+                child: Income()),
+            ],
+          ),),
       ],
     );
   }
