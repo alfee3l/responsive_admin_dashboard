@@ -12,8 +12,8 @@ import 'package:responsive_admin_dashboard/views/widgets/my_crad_and_transaction
 import 'package:responsive_admin_dashboard/views/widgets/quick_invoice.dart';
 import 'package:responsive_admin_dashboard/views/widgets/transaction_history.dart';
 
-class DashBoradDesktopLayoutView extends StatelessWidget {
-  const DashBoradDesktopLayoutView({super.key});
+class DashboardDesktopLayoutView extends StatelessWidget {
+  const DashboardDesktopLayoutView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,10 @@ class DashBoradDesktopLayoutView extends StatelessWidget {
         SizedBox(width: 32),
         Expanded(
           flex: 2,
-          child: SingleChildScrollView(child: AllExpensesAndQuickInvoice()),
+          child: SingleChildScrollView(child: Padding(
+            padding: const EdgeInsets.only(top: 40),
+            child: AllExpensesAndQuickInvoice(),
+          )),
         ),  
         SizedBox(width: 24,),
         Expanded(  
